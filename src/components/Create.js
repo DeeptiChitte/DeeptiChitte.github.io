@@ -50,11 +50,19 @@ class Create extends Component {
       <div class="panel panel-default">
         <nav class="navbar navbar-expand-md  fixed-top ">
           <div class="panel-heading">
-            <h3 class="panel-title">
-              ADD BLOG
-            </h3>
-          </div>
-        </nav>
+            <h4 id="navBrand" class="panel-title">
+             <strong> ADD BLOG</strong>
+            </h4>
+            </div>
+            <div>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">Home</li>
+                  <li class="nav-item">Spotlight</li>
+                <li class="nav-item">Something Else</li>
+                </ul>
+                </div>
+          </nav>
+          
        <main>
           <div class="panel-body">
             <h4><Link to="/" class="btn btn-primary">Blog List</Link></h4>

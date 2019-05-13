@@ -4,7 +4,7 @@ body {
   
   height: 100vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-image: url('https://images.pexels.com/photos/673648/pexels-photo-673648.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+  /* background-image: url('https://images.pexels.com/photos/673648/pexels-photo-673648.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -20,14 +20,23 @@ body {
   color: white;
   padding-bottom: 2rem;
 }
+ul {
+  /* letter-spacing: .5rem; */
+  margin-left:40px;
+  margin-right:40px;
+  /* padding-top: 2.5rem; */
+  font-size: 18px;
+  color: white;
+}
 .navbar-nav li {
-  padding-right: 0.7rem;
+  padding-right: 2rem;
+  
 }
 .navbar-dark,
 .navbar-nav,
 .nav-link {
   color: white;
-  padding-top: 0.8rem;
+  /* padding-top: 1rem; */
 }
 .navbar-dark,
 .navbar-nav,
@@ -36,8 +45,12 @@ body {
 .navbar-nav,
 .nav-link:hover {
   color: white;
-  padding-top: 0.8rem;
+  padding-top: 1.5rem;
 }
+#diffColor {
+  color: white;
+}
+
 .carousel-item {
   /* height: 100px;
   width: 100%; */
@@ -61,15 +74,9 @@ body {
 #carouselExampleIndicators {
   image-resolution: 500px;
 }
-/* footer {
-  text-align: center;
- overflow: visible;
- position: fixed;
-  color: white;
-  padding: 2rem 0 3rem;
-  margin-top: 1rem;
-} */
+
 .card-columns {
   margin-top: 10rem;
   margin-left: 18rem;
+  margin-right: 18rem;
 }

@@ -43,7 +43,7 @@ class Show extends Component {
         <div class="panel panel-default">
         <nav class="navbar navbar-expand-md  fixed-top">
           <div class="panel-heading">
-              <h4><Link to="/">Blog List</Link></h4>
+              <h4><Link to="/" class="text-white">Blog List</Link></h4>
               </div>
               </nav>
         </div>
