@@ -42,21 +42,21 @@ class App extends Component {
           
          <nav class="navbar navbar-expand-md  fixed-top ">
            <div class="navbar-brand">
-              <h4><strong>Some Blog</strong></h4>
+              <h2><strong>Some Blog</strong></h2>
               </div>
               <div>
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">Home</li>
                   <li class="nav-item">Spotlight</li>
                   <li class="nav-item">Something Else</li>
-                  <li class="nav-item"><Link to="/create">Add Blog</Link>
+                  <li class="nav-item"><Link to="/create" class="text-white">Add Blog</Link>
                   </li>
                 </ul>
               </div>
            
             </nav>
             </div>
-            <div class="carousel-inner">
+            {/* <div class="carousel-inner">
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
@@ -74,9 +74,9 @@ class App extends Component {
             </ol>
           
 
-          {/* <div class="carousel-inner"> */}
+          {/* <div class="carousel-inner"> */
          
-      <div
+      /* <div
               className="carousel-item active"
               style={{ backgroundImage: "url('https://images.pexels.com/photos/1202849/pexels-photo-1202849.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') "} }>
               <div class="carousel-caption text-center">
@@ -104,7 +104,7 @@ class App extends Component {
            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> 
             <span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span></a> 
+          <span class="carousel-control-next-icon" aria-hidden="true"></span></a>  */
           
             <div class="card-columns">
               {this.state.blogs.map(blog => (
@@ -116,22 +116,8 @@ class App extends Component {
                 </div>
               ))}
           </div>
-                       {/* <div id="contact"> 
-            <footer>
-              <div class="row justify-content-center">
-                <div class="col-md-9 text-center">
-               
-                  <strong>Contact Info</strong>
-                  <p>(888) 888-8888</p>
-                    <p>email@blog.com</p>
-             <a href="" target="_blank"><i class="fab fa"></i></a>
-                  <a href="" target="_blank"><i class="fab fa"></i></a>
-                  <a href="" target="_blank"><i class="fab fa"></i></a>
-
-                </div>
-                </div>
-                
-              </footer> 
+                       /* <div id="contact"> 
+             
 </div> */}
         </body>
       </div>

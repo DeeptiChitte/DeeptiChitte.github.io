@@ -1,9 +1,14 @@
-.panel-title {
-    color: white;
-    display: block;
+#navBrand {
+color: white;
 }
 .panel-body {
     display: inline-block;
     margin: 20%;
     top: 20rem;
 }
+ul {
+    /* letter-spacing: .5rem; */
+    margin-left:50px;
+    margin-right:50px;
+    padding: 20px;
+  }
