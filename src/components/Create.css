@@ -1,0 +1,9 @@
+.panel-title {
+    color: white;
+    display: block;
+}
+.panel-body {
+    display: inline-block;
+    margin: 20%;
+    top: 20rem;
+}

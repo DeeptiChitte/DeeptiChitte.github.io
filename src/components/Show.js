@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import firebase from '../Firebase';
 import { Link } from 'react-router-dom';
-
+import '../App.css';
+import './Show.css';
 class Show extends Component {
 
   constructor(props) {
@@ -40,13 +41,19 @@ class Show extends Component {
     return (
       <div class="container">
         <div class="panel panel-default">
+        <nav class="navbar navbar-expand-md  fixed-top">
           <div class="panel-heading">
-          <h4><Link to="/">Blog List</Link></h4>
+              <h4><Link to="/">Blog List</Link></h4>
+              </div>
+              </nav>
+        </div>
+        <div class="panel-body">
             <h3 class="panel-title">
               {this.state.blog.title}
             </h3>
-          </div>
-          <div class="panel-body">
+          
+            
+          {/* <div class="panel-body"> */}
             <dl>
               <dt>Body:</dt>
               <dd>{this.state.blog.body}</dd>
@@ -55,7 +62,7 @@ class Show extends Component {
             <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Delete</button>
           </div>
         </div>
-      </div>
+      // </div>
     );
   }
 }

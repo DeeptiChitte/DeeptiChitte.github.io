@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import firebase from '../Firebase';
 import { Link } from 'react-router-dom';
 
+import '../App.css';
+import './Edit.css';
+
 class Edit extends Component {
 
   constructor(props) {
@@ -62,11 +65,14 @@ class Edit extends Component {
     return (
       <div class="container">
         <div class="panel panel-default">
+        <nav class="navbar navbar-expand-md  fixed-top">
           <div class="panel-heading">
             <h3 class="panel-title">
               EDIT BLOG
             </h3>
-          </div>
+            </div>
+          </nav>
+          <main>
           <div class="panel-body">
             <h4><Link to={`/show/${this.state.key}`} class="btn btn-primary">Blog List</Link></h4>
             <form onSubmit={this.onSubmit}>
@@ -81,7 +87,8 @@ class Edit extends Component {
               
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
-          </div>
+            </div>
+            </main>
         </div>
       </div>
     );

@@ -1,33 +1,75 @@
-.App {
-  text-align: center;
+body {
+  overflow-x: hidden;
+  color: grey;
+  
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-image: url('https://images.pexels.com/photos/673648/pexels-photo-673648.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-brand {
+  height: 0.6rem;
   color: white;
+  padding-bottom: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar-nav li {
+  padding-right: 0.7rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-dark,
+.navbar-nav,
+.nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+.navbar-dark,
+.navbar-nav,
+.nav-link.active,
+.navbar-dark,
+.navbar-nav,
+.nav-link:hover {
+  color: white;
+  padding-top: 0.8rem;
+}
+.carousel-item {
+  /* height: 100px;
+  width: 100%; */
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+	
+  position: fixed;
+  top: 0;
+  left:0;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.carousel-caption {
+  position: absolute;
+  top: 65%;
+}
+#carouselExampleIndicators {
+  image-resolution: 500px;
+}
+/* footer {
+  text-align: center;
+ overflow: visible;
+ position: fixed;
+  color: white;
+  padding: 2rem 0 3rem;
+  margin-top: 1rem;
+} */
+.card-columns {
+  margin-top: 10rem;
+  margin-left: 18rem;
 }

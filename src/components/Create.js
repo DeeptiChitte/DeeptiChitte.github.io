@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import firebase from '../Firebase';
 import { Link } from 'react-router-dom';
+import '../App.css';
+import './Create.css';
 
 class Create extends Component {
 
@@ -43,14 +45,20 @@ class Create extends Component {
     const { title, body } = this.state;
     return (
       <div class="container">
-        <div class="panel panel-default">
+      
+   
+      <div class="panel panel-default">
+        <nav class="navbar navbar-expand-md  fixed-top ">
           <div class="panel-heading">
             <h3 class="panel-title">
               ADD BLOG
             </h3>
           </div>
+        </nav>
+       <main>
           <div class="panel-body">
             <h4><Link to="/" class="btn btn-primary">Blog List</Link></h4>
+            
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <label for="title">Title:</label>
@@ -63,9 +71,12 @@ class Create extends Component {
               
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
+            </div>
+            </main>
           </div>
-        </div>
-      </div>
+         
+      
+        </div> 
     );
   }
 }
